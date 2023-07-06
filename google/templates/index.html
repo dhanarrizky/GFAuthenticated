@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<dev class="container ml-4 p-5">
+    <h1>Welcome {{ user.username }}</h1>
+    <br>
+        <h3 style="color:white;">Hallo this is index page</h3>
+    <br><br>
+        <a href="{% url 'logout' %}" style="color:red;">Exit</a>
+</dev>
+
+{% endblock content %}
